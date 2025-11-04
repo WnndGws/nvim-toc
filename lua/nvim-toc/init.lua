@@ -153,7 +153,7 @@ function M.setup(config)
     vim.api.nvim_create_autocmd(
         "BufEnter",
         {
-            pattern = "*.md,*.markdown",
+            pattern = "*.md,*.markdown,*.enc",
             callback = function()
                 -- create command to generate/update table of contents for markdown files at current cursor position
                 vim.api.nvim_buf_create_user_command(0, 'TOC',
